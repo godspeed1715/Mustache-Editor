@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mustache">
+<head>
+    <title>Mustache</title>
+    <hta:application 
+    ID="Mustache"
+    APPLICATIONNAME="Mustache-editor" 
+    SYSMENU="yes"
+    SCROLL="yes"
+	CAPTION="yes"
+    APPLICATIONNAME="Analyst Dashboard" 
+    border="normal"
+    borderStyle="normal" 
+    contextMenu="yes" 
+    maximizeButton="yes" 
+    minimizeButton="yes" 
+    navigable="true" 
+    showInTaskbar="yes" 
+	ICON="./app/lib/images/mustache.ico"
+    singleInstance="no"  />
+    <meta http-equiv="x-ua-compatible" content="ie=9">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./app/lib/css/bootstrap.css" media="screen" />
+    <link rel="stylesheet" href="./app/lib/css/bootswatch.min.css" />
+    <link rel="stylesheet" href="./app/lib/css/font-awesome.css" />
+    <link rel="stylesheet" href="./app/lib/css/codemirror.css" />
+    <link rel="stylesheet" href="./app/lib/css/foldgutter.css" />
+    <link rel="stylesheet" href="./app/lib/css/alertify.default.css" />
+	<link rel="stylesheet" href="./app/lib/css/codemirror-dialog-addon.css"/>
+    <link rel="stylesheet" href="./app/lib/css/mustache.css" />
+	
+    <!--themes-->
+    <link id="themes" rel="stylesheet" type="text/css" href="./app/lib/css/themes/lightbox.css">
+    <link id="mustache-themes" rel="stylesheet" type="text/css" href="./app/lib/css/lightbox.css">
+</head>
+
+
+<body>
+    <!--Splash Screen-->
+    <div class="splash-container">
+        <div class="splash-h">
+            <div class="splash-logo">mustache</div>
+        </div>
+    </div><!-- /splash-container -->
+    <div class="mustache-App hide" ng-controller="MustacheCtrl">
+        <div class="mustache-header">
+            <dropdownmenu></dropdownmenu>
+		  	 <tabs></tabs>
+        </div>
+	  	<sidebar></sidebar>
+	  	<div class="tab-content">
+            <div ng-repeat="content in workingFiles" ng-class="{active: content.active}" id="codeeditor{{$index}}" class="tab-pane codeeditor{{$index}}">
+                <textarea id="editor-{{$index}}" class="contentStyle"></textarea>
+            </div>
+        </div><!--/Tab Content -->
+        <div id="mustache-statusbar">
+            <span ng-show="codePaneActive">
+                <statusbarline></statusbarline>
+				<statusbarstatus></statusbarstatus>
+			  	<statusbarfontsize></statusbarfontsize>
+                <statusbartabsize></statusbartabsize>
+			  	<statusbarsyntax></statusbarsyntax>
+            </span>
+        </div>
+    <!--/mustache-App-->
+	<script src="./app/lib/js/keymaster.js"></script>
+    <script src="./app/lib/js/jquery-1.10.2.min.js"></script>
+    <script src="./app/lib/js/angular.js"></script>
+    <script src="./app/lib/js/bootstrap.min.js"></script>
+	<script src="./app/lib/js/jquery.jsconsole.js"></script>
+	<script type="text/javascript">
+        jsConsole.init();
+        jsConsole.toggle();
+    </script>
+	<script src="./app/lib/js/beautify.js"></script>
+	<!--CodeMirror-->
+    <script src="./app/lib/js/codemirror/codemirror.js"></script>
+    <script src="./app/lib/js/codemirror/codemirror-changemode.js"></script>
+    <script src="./app/lib/js/codemirror/codemirror-matchbrackets.js"></script>
+    <script src="./app/lib/js/codemirror/codemirror-foldcode.js"></script>
+    <script src="./app/lib/js/codemirror/codemirror-foldgutter.js"></script>
+    <script src="./app/lib/js/codemirror/codemirror-bracefold.js"></script>
+    <script src="./app/lib/js/codemirror/codemirror-xmlfold.js"></script>
+    <script src="./app/lib/js/codemirror/codemirror-commentfold.js"></script>
+    <script src="./app/lib/js/codemirror/codemirror-scrollpastend.js"></script>
+	<script src="./app/lib/js/codemirror/codemirror-search.js"></script>
+	<script src="./app/lib/js/codemirror/codemirror-searchcursor.js"></script>
+	<script src="./app/lib/js/codemirror/codemirror-dialog.js"></script>
+	<script src="./app/lib/js/codemirror/codemirror-closebrackets.js"></script>
+	<script src="./app/lib/js/codemirror/codemirror-show-hint.js"></script>
+	<script src="./app/lib/js/codemirror/codemirror-javascript-hint.js"></script>
+	<script src="./app/lib/js/codemirror/codemirror-goto.js"></script>
+	<script src="./app/lib/js/codemirror/modes/javascript.js"></script>
+
+	<!--Mustache-->
+	<script src="./app/lib/js/mustacheApp.js"></script>
+	<script src="./app/lib/js/mustacheControllers.js"></script>
+	<script src="./app/lib/js/mustacheServices.js"></script>
+    <script src="./app/lib/js/mustacheDirectives.js"></script>
+</body>
+
+</html>
+

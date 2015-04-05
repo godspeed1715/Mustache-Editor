@@ -1,0 +1,117 @@
+/*
+
+    Name:       BlackBox
+    Author:     Lee Barlow
+
+    CodeMirror template by Lee Barlow
+    Based on Base16 color scheme by Chris Kempson (https://github.com/chriskempson/base16)
+
+*/
+
+.cm-s-blackbox.CodeMirror {background: #2b303b; color: #dfe1e8;}
+.cm-s-blackbox div.CodeMirror-selected {background: #3D4550 !important; border-radius: 2px; padding: 8px;}
+.cm-s-blackbox .CodeMirror-gutters {background: #2b303b; border-right: 1px; padding-left: 8px; padding-right: 10px;}
+.cm-s-blackbox .CodeMirror-linenumber {color: #65737e;}
+.cm-s-blackbox .CodeMirror-cursor {border-left: 1px solid #a7adba !important;}
+
+.cm-s-blackbox span.cm-comment {color: rgb(101,115,126);}
+.cm-s-blackbox span.cm-atom {color: #b48ead;}
+.cm-s-blackbox span.cm-number {color: #b48ead;}
+
+.cm-s-blackbox span.cm-property, .cm-s-blackbox span.cm-attribute {color: #a3be8c;}
+.cm-s-blackbox span.cm-keyword {color: rgb(180,142,173);}
+.cm-s-blackbox span.cm-string {color: rgb(192,197,206);}
+
+.cm-s-blackbox span.cm-variable {color: rgb(191,97,106);}
+.cm-s-blackbox span.cm-variable-2 {color: #8fa1b3;}
+.cm-s-blackbox span.cm-def {color:rgb(143,161,179);}
+.cm-s-blackbox span.cm-error {color: #bf616a;}
+.cm-s-blackbox span.cm-bracket {color: #dfe1e8;}
+.cm-s-blackbox span.cm-tag {color: #bf616a;}
+.cm-s-blackbox span.cm-link {color: #b48ead;}
+
+.cm-s-blackbox .CodeMirror-matchingbracket { text-decoration: underline; color: white !important;}
+
+.CodeMirror-hints {
+  position: absolute;
+  z-index: 10;
+  overflow: hidden;
+  list-style: none;
+
+  margin: 0;
+  padding: 0px;
+
+  background: #333D46;
+  font-size: 90%;
+  border: none;
+  border-radius: 0px;
+  max-height: 20em;
+  overflow-y: auto;
+}
+
+.CodeMirror-hint {
+  margin: 0;
+  padding: 5px 10px;
+  width: 100%;
+  overflow: hidden;
+  white-space: pre;
+  color: #65737E;
+  cursor: pointer;
+}
+
+.CodeMirror-hint-active {
+  background: #4F5B67;
+  color: #A7ADBA;
+  border: none;
+  border-radius: 0px;
+}
+							 
+.CodeMirror-dialog {
+  position: absolute;
+  left: 400px; right: 400px;
+  background: #1C1F26;
+  z-index: 15;
+  padding: .1em .8em;
+  overflow: hidden;
+  color: #4F5B66;
+}
+
+.CodeMirror-dialog-top {
+  border-bottom: 2px solid #333D46;
+  top: 0;
+}
+
+.CodeMirror-dialog-bottom {
+  border-bottom: 2px solid #333D46;
+  bottom: 0;
+}
+
+.CodeMirror-dialog input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100px;
+  color: inherit;
+}
+
+.CodeMirror-dialog .btn-search {
+  font-weight: 700;
+  padding: 4px 6px;
+  margin: 1px;
+  background: #232830;
+  border-radius: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

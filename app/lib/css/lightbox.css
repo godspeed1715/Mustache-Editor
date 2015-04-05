@@ -1,0 +1,46 @@
+    /*
+    Theme color palette
+    body background color rgb(239,241,245)
+    body text color rgb(167,173,186)
+    header background color rgb(223,225,232)
+    sidebar background color rgb(230,233,240)
+    */
+    body {
+        background: rgb(239,241,245);
+        color: rgb(167,173,186);
+        scrollbar-face-color: rgb(192,197,206); 
+        scrollbar-highlight-color: rgb(192,197,206);
+        scrollbar-shadow-color: rgb(192,197,206);
+        scrollbar-3dlight-color: rgb(192,197,206);
+        scrollbar-arrow-color: rgb(230,233,240);
+        scrollbar-track-color: rgb(230,233,240);
+        scrollbar-darkshadow-color: rgb(230,233,240);
+        scrollbar-base-color: rgb(230,233,240);
+    }
+    .mustache-header { 
+        background: rgb(223,225,232);
+    }
+    #tabs .active {
+        background: rgb(239,241,245);
+    }
+    .mustache-header-tab a {
+        color: rgb(51,61,69);
+    }
+    .sidebar-wrap {
+        background: rgb(230,233,240);
+    }
+    .sidebar a, 
+    .sidebar .header {
+        color: rgb(167,173,186);
+    }
+    .sidebar .workingfile {
+        color: rgb(51,61,69);
+    }
+    .splash-logo, .splash-tag {
+        color: rgb(167,173,186);
+        text-shadow: 1px 1px white, -1px -1px rgba(200,200,200,1.0);
+    }
+    #mustache-statusbar {
+        background: #DFE1E8;
+        color: #90919C;/*rgb(51,61,69);*/
+    }

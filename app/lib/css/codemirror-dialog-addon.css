@@ -1,0 +1,33 @@
+.CodeMirror-dialog {
+  position: absolute;
+  left: 400px; right: 400px;
+  background: #1C1F26;
+  z-index: 15;
+  padding: .1em .8em;
+  overflow: hidden;
+  color: #fff;
+  font-family: 'Source Code Pro', sans-serif;
+}
+
+.CodeMirror-dialog-top {
+  border-bottom: 2px solid #333D46;
+  top: 0;
+}
+
+.CodeMirror-dialog-bottom {
+  border-bottom: 2px solid #333D46;
+  bottom: 0;
+}
+
+.CodeMirror-dialog input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100px;
+  color: inherit;
+}
+
+.CodeMirror-dialog button {
+  font-size: 70%;
+}
+

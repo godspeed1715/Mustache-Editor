@@ -1,0 +1,107 @@
+/*
+
+    Name:       Lightbox
+    Author:     Nayland O'Neal
+
+    CodeMirror template by Nayland O'Neal (https://github.com/idleberg/base16-codemirror)
+    Original Base16 color scheme by Chris Kempson (https://github.com/chriskempson/base16)
+
+*/
+
+.cm-s-lightbox.CodeMirror { background: rgb(239,241,245); color: #1c3f95;}
+.cm-s-lightbox div.CodeMirror-selected {background: #e7e7e8 !important;}
+.cm-s-lightbox .CodeMirror-gutters { background: rgb(239,241,245); border-right: 0px; padding-left: 8px; padding-right: 10px;}
+.cm-s-lightbox .CodeMirror-linenumber {color: #959ca1;}
+.cm-s-lightbox .CodeMirror-cursor {border-left: 1px solid #737171 !important;}
+
+
+
+.cm-s-lightbox span.cm-keyword {color: #708;}
+.cm-s-lightbox span.cm-atom {color: #219;}
+.cm-s-lightbox span.cm-number {color: #164;}
+.cm-s-lightbox span.cm-def {color: #00f;}
+.cm-s-lightbox span.cm-variable {color: black;}
+.cm-s-lightbox span.cm-variable-2 {color: #05a;}
+.cm-s-lightbox span.cm-variable-3 {color: #085;}
+.cm-s-lightbox span.cm-property {color: black;}
+.cm-s-lightbox span.cm-operator {color: black;}
+.cm-s-lightbox span.cm-comment {color: #a50;}
+.cm-s-lightbox span.cm-string {color: #a11;}
+.cm-s-lightbox span.cm-string-2 {color: #f50;}
+.cm-s-lightbox span.cm-meta {color: #555;}
+.cm-s-lightbox span.cm-qualifier {color: #555;}
+.cm-s-lightbox span.cm-builtin {color: #30a;}
+.cm-s-lightbox span.cm-bracket {color: #997;}
+.cm-s-lightbox span.cm-tag {color: #170;}
+.cm-s-lightbox span.cm-attribute {color: #00c;}
+.cm-s-lightbox span.cm-header {color: blue;}
+.cm-s-lightbox span.cm-quote {color: #090;}
+.cm-s-lightbox span.cm-hr {color: #999;}
+.cm-s-lightbox span.cm-link {color: #00c;}
+
+.CodeMirror-hints {
+  position: absolute;
+  z-index: 10;
+  overflow: hidden;
+  list-style: none;
+
+  margin: 0;
+  padding: 0px;
+
+  background: rgb(239,241,245);
+  font-size: 90%;
+  border: 1px solid #E6E9F0;
+  border-radius: 0px;
+  max-height: 20em;
+  overflow-y: auto;
+}
+
+.CodeMirror-hint {
+  margin: 0;
+  padding: 5px 10px;
+  width: 100%;
+  overflow: hidden;
+  white-space: pre;
+  color: #000;
+  cursor: pointer;
+}
+
+.CodeMirror-hint-active {
+  background: #E6E9F0;
+  color: #000;
+  border: none;
+  border-radius: 0px;
+}
+
+.CodeMirror-dialog {
+  position: absolute;
+  left: 400px; right: 400px;
+  background: #DFE1E8;
+  z-index: 15;
+  padding: .1em .8em;
+  overflow: hidden;
+  color: #000;
+}
+
+.CodeMirror-dialog-top {
+  border-bottom: 2px solid #E6E9F0;
+  top: 0;
+}
+
+.CodeMirror-dialog-bottom {
+  border-bottom: 2px solid #E6E9F0;
+  bottom: 0;
+}
+
+.CodeMirror-dialog input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100px;
+  color: inherit;
+}
+
+.CodeMirror-dialog button {
+  font-size: 70%;
+}
+

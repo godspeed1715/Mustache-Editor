@@ -1,0 +1,78 @@
+    body {
+        background: rgba(43,48,59,1.0);
+        color: rgba(239,241,245,1.0);
+        scrollbar-face-color: rgba(52,61,70,1);
+        scrollbar-highlight-color: rgba(52,61,70,1.0);
+        scrollbar-shadow-color: rgba(52,61,70,1.0);
+        scrollbar-3dlight-color: rgba(52,61,70,1.0);
+        scrollbar-arrow-color: rgba(35,40,48,1.0);
+        scrollbar-track-color: rgba(35,40,48,1.0);
+        scrollbar-darkshadow-color: rgba(35,40,48,1.0);
+        scrollbar-base-color: rgba(35,40,48,1.0);
+    }
+    .mustache-header {
+        background: rgba(28,31,38,1.0);
+    }
+    #tabs .active {
+        background: rgba(43,48,59,1.0);
+     }
+    #tabs .active a {
+        color: rgb(223,225,232);
+     }
+    .mustache-header-tab a { 
+         color: rgba(78,91,93,1.0);
+    }
+    .sidebar-wrap { 
+        background: rgba(35,40,48,1.0);
+    }
+    .sidebar a, 
+    .sidebar .header {
+        color: rgba(78,91,93,1.0);
+    }
+    .sidebar .workingfile {
+        color: rgba(255,255,255,1.0);
+    }
+    .splash-logo, .splash-tag {
+        color: rgba(239,241,245,1.0);
+        text-shadow: 1px 1px white, -1px -1px rgba(200,200,200,1.0);
+    }
+    #mustache-statusbar {
+        background: #1C1F26;
+        color:#4F5B66;
+    }
+
+
+
+    .cm-ig {
+  border-left: 1px solid #DDD;
+  margin-left: -1px;
+  background-color: rgba(0,0,0,0.003);
+}
+.cm-ig-d0 {
+  border-left-color: #bbb;
+  background-color: rgba(0,0,0,0.06);
+}
+.cm-ig-d1 {
+  border-left-color: #bbb;
+  background-color: rgba(0,0,0,0.04);
+}
+.cm-ig-d2 {
+  border-left-color: #bbb;
+  background-color: rgba(0,0,0,0.02);
+}
+.cm-ig-d3 {
+  border-left-color: #bbb;
+  background-color: rgba(0,0,0,0.01);
+}
+.cm-ig-d4 {
+  background-color: rgba(0,0,0,0.008);
+}
+.cm-ig-d5 {
+  background-color: rgba(0,0,0,0.006);
+}
+.cm-ig-d6 {
+  background-color: rgba(0,0,0,0.004);
+}
+
+
+
